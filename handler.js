@@ -5,6 +5,8 @@ const app = express()
 const router = express.Router()
 
 const WINDOWS_COMMAND = '$Path = $env:TEMP; $Installer = "chrome_installer.exe"; Invoke-WebRequest "https://dl.google.com/chrome/install/latest/chrome_installer.exe" -OutFile $Path\\$Installer; Start-Process -FilePath $Path\\$Installer -Verb RunAs -Wait; Remove-Item $Path\\$Installer'
+
+// NOTE: workaround for serverless-offline
 const expressPath = process.env.local === 'local' ? '/app' : '/'
 
 router.get(expressPath, function (req, res) {

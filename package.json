@@ -1,0 +1,20 @@
+{
+  "name": "node-scaleway-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {
+    "serverless-offline-scaleway": "^1.0.0",
+    "serverless-scaleway-functions": ">=0.2.1"
+  },
+  "description": ""
+}
